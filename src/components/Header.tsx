@@ -152,7 +152,7 @@ export const Header: React.FC = () => {
             }`}
           >
             <Grid className="w-4 h-4" />
-            Formula Taxonomy
+            Calculator Library
           </button>
 
           <button
