@@ -44,7 +44,7 @@ const savedCustom = typeof window !== 'undefined' ? localStorage.getItem('zhynor
 const initialCustom: CustomFormula[] = savedCustom ? JSON.parse(savedCustom) : [];
 
 export const useCalculatorStore = create<CalculatorState>((set, get) => ({
-  activeTab: 'omnibox',
+  activeTab: 'basic_scientific',
   selectedCategory: 'all',
   activeFormulaId: 'fin-emi',
   activeResult: null,
