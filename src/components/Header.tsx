@@ -95,17 +95,6 @@ export const Header: React.FC = () => {
 
         {/* Navigation Tabs */}
         <div className="flex space-x-1 overflow-x-auto pb-2 scrollbar-none border-t border-slate-800/60 pt-2 text-sm font-medium">
-          <button
-            onClick={() => setActiveTab('omnibox')}
-            className={`flex items-center gap-2 px-3.5 py-2 rounded-lg transition whitespace-nowrap ${
-              activeTab === 'omnibox'
-                ? 'bg-blue-600 text-white font-semibold shadow-md'
-                : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800'
-            }`}
-          >
-            <Sparkles className="w-4 h-4" />
-            AI Natural Engine
-          </button>
 
           <button
             onClick={() => setActiveTab('basic_scientific')}
@@ -190,6 +179,19 @@ export const Header: React.FC = () => {
             <HistoryIcon className="w-4 h-4" />
             Audit History ({history.length})
           </button>
+
+          <button
+            onClick={() => setActiveTab('omnibox')}
+            className={`flex items-center gap-2 px-3.5 py-2 rounded-lg transition whitespace-nowrap ${
+              activeTab === 'omnibox'
+                ? 'bg-blue-600 text-white font-semibold shadow-md'
+                : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800'
+            }`}
+          >
+            <Sparkles className="w-4 h-4" />
+            AI Natural Engine
+          </button>
+
         </div>
       </div>
     </header>
